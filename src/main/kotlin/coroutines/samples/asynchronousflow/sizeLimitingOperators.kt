@@ -1,8 +1,8 @@
 package coroutines.samples.asynchronousflow
 
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
-import org.intellij.lang.annotations.Flow
 
 private fun numbers(): Flow<Int> = flow {
     try {

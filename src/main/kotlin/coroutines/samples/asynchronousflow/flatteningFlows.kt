@@ -1,11 +1,11 @@
 package coroutines.samples.asynchronousflow
 
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.runBlocking
-import org.intellij.lang.annotations.Flow
 
 private fun requestFlow(i: Int): Flow<String> = flow {
     emit("$i: First")
