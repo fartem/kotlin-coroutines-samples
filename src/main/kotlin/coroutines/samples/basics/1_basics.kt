@@ -11,11 +11,5 @@ fun main() = runBlocking {
         delay(1_000) // Non-blocking delay
     }
     println("--- Original app thread ---")
-//    Thread.sleep(2_000) // Blocking delay
-
-//    runBlocking { // Blocking delay
-//        delay(2_000)
-//    }
-
     delay(2_000) // Blocking delay
 }

@@ -13,6 +13,6 @@ private fun simple(): Flow<Int> = flow {
 fun main() = runBlocking {
     simple()
             .onCompletion { cause -> if (cause != null) println("Flow completed exceptionally") }
-            .catch { cause -> println("Caught exception") }
+            .catch { _ -> println("Caught exception") }
             .collect { value -> println(value) }
 }

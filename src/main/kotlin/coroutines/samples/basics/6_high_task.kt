@@ -12,12 +12,3 @@ fun main() = runBlocking {
         }
     }
 }
-
-//fun main() {
-//    repeat(1_000_000 + 1) { iteration ->
-//        thread {
-//            Thread.sleep(100)
-//            println(iteration)
-//        }
-//    }
-//}

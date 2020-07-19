@@ -12,7 +12,7 @@ private fun simple(): Flow<String> = flow {
         emit(i)
     }
 }.map { value ->
-    check(value <= 1) { "Chared on $value" }
+    check(value <= 1) { "Checked on $value" }
     "string $value"
 }
 

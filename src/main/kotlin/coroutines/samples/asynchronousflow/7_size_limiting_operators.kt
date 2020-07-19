@@ -1,7 +1,10 @@
 package coroutines.samples.asynchronousflow
 
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.take
 import kotlinx.coroutines.runBlocking
 
 private fun numbers(): Flow<Int> = flow {
@@ -15,6 +18,7 @@ private fun numbers(): Flow<Int> = flow {
     }
 }
 
+@ExperimentalCoroutinesApi
 fun main() = runBlocking {
     numbers()
             .take(2)
